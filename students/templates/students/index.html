@@ -1,13 +1,13 @@
 {% extends "students/base.html" %}
 
 {% block body %}
-<h3 class="m-4">All Students</h3>
+<h3 class="m-4">All employee</h3>
 <div class="row">
   <div class="col-12">
     {% if students %}
     <div class="card bg-light ms-4 me-4 mb-4">
       <div class="card-header">
-        <i class="fa-solid fa-list fa-lg"></i> Student Records
+        <i class="fa-solid fa-list fa-lg"></i> employee Records
       </div>
       <div class="card-body">
         <p class="card-text">
@@ -85,7 +85,7 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <p>Are you sure you want to delete this student?</p>
+                              <p>Are you sure you want to delete this employee?</p>
                             </div>
                             <div class="modal-footer">
                               <form action="{% url 'delete' student.id %}" method="POST">
@@ -107,7 +107,7 @@
       </div>
     </div>
     {% else %}
-      <h5 class="alert alert-primary ms-4 me-4">No Student Records</h5>
+      <h5 class="alert alert-primary ms-4 me-4">No employee Records</h5>
     {% endif %}
   </div>
 </div>
