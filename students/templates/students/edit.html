@@ -1,10 +1,17 @@
 {% extends "students/base.html" %}
 
 {% block body %}
+<<<<<<< HEAD
   <h3 class="text-center m-4">Update Pegawai</h3>
   {% if success %}
     <div class="alert alert-success" role="alert">
       The Pegawai updated successfully.
+=======
+  <h3 class="text-center m-4">Update employee</h3>
+  {% if success %}
+    <div class="alert alert-success" role="alert">
+      The employee updated successfully.
+>>>>>>> 95a617fcea26435dbff80ef9da02a745361c5fc5
       <a href="{% url 'index' %}" class="alert-link">Go to Home Page.</a>
     </div>
   {% else %}
@@ -12,7 +19,11 @@
       <div class="col-6">
         <div class="card bg-light mb-3">
           <div class="card-header">
+<<<<<<< HEAD
             <i class="fa-solid fa-pen-to-square fa-lg"></i> Update Pegawai Records
+=======
+            <i class="fa-solid fa-pen-to-square fa-lg"></i> Update employee Records
+>>>>>>> 95a617fcea26435dbff80ef9da02a745361c5fc5
           </div>
           <div class="card-body">
             <form action="" method="POST">
